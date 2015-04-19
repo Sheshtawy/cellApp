@@ -1,0 +1,19 @@
+<div ng-controller="SalesMonthCtrl" class="panel panel-default">
+
+  <!-- <span class="glyphicon glyphicon-remove pull-right" ng-click="toggle()"></span>
+  <span class="glyphicon glyphicon-refresh" ng-click="fetch()"></span> -->
+<div class="panel-heading">
+  <!-- <div class="pull-left"> -->
+  <i class="fa fa-smile-o fa-2x"></i> VS <i class="fa fa-frown-o fa-2x"></i> 
+  <!-- </div> --> 
+  <button type="button" class="btn btn-link btn-sm pull-right" ng-model="selectedIcon" data-html="1" bs-options="icon.value as icon.label for icon in icons" bs-select>
+      Action <span class="caret"></span>
+    </button>
+</div>
+<div class="panel-body">
+<canvas id="bar" class="chart chart-bar" data="data" labels="labels" legend="true" series="series"></canvas>
+  </div>
+
+   <!--  <p class="small text-center" ng-hide="show"><a ng-click="toggle()" href="" class="text-center">Reopen the Sales per Month section</a></p> -->
+</div>
+
